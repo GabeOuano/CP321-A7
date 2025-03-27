@@ -21,6 +21,8 @@ map_data = map_data.merge(win_counts, left_on='country', right_on='Country', how
 # Initialize Dash app
 app = dash.Dash(__name__)
 
+server = app.server
+
 # Layout
 app.layout = html.Div([
     html.H1('FIFA World Cup Winners Dashboard'),
